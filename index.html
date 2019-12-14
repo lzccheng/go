@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>go</title>
+</head>
+<body>
+    <div>
+        hellow , everybody ! welcome to my web !
+    </div>
+    
+    <script>
+        function queryName (name) {
+            var search = location.search.slice(1)
+            var obj = {}
+            search.split('&').forEach(function (i) {
+                var arr = i.split('=')
+                obj[arr[0]] = arr[1]
+            })
+            return obj[name]
+        }
+        var url = queryName('url')
+        if (url) location.href = url
+    </script>
+</body>
+</html>
