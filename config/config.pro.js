@@ -8,8 +8,7 @@ const resolve = str => path.resolve(__dirname, `../${str}`)
 const config = {
     output: {
         path: resolve('docs'),
-        filename: 'js/[name].[hash:8].js',
-        publicPath: 'go'
+        filename: 'js/[name].[hash:8].js'
     },
     plugins: [
         new CleanWebpackPlugin()
