@@ -8,4 +8,4 @@ function queryName (name) {
     return obj[name]
 }
 var url = queryName('url')
-location.href = url || `http://103.140.228.151`
+location.href = url || `https://url.cn/5UzB4Tz`
